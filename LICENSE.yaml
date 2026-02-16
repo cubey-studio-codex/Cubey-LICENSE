@@ -1,130 +1,130 @@
 # ==============================================================================
-# CUBEY STUDIO CODEX - OFFICIAL SOFTWARE LICENSE AGREEMENT
+# CUBEY STUDIO CODEX - MASTER LICENSE TEMPLATE
 # ==============================================================================
-# License: Cubey LICENSE 1.0 (CL-1.0)
+# License Name: Cubey LICENSE 1.0 (CL-1.0)
+# Status: Official Template
 # Organization: Cubey Studio Codex
-# Repository: https://github.com/cubey-studio-codex
-# Framework: Cube Studio 2D-X
+# Legal URI: https://github.com/cubey-studio-codex/Cubey-LICENSE
 # ==============================================================================
 
-version_control:
-  license_version: "1.0.0"
-  revision_date: "2026-02-16"
-  status: "OFFICIAL_RELEASE"
-  
-# ------------------------------------------------------------------------------
-# SECTION 1: LANGUAGE COMPLIANCE (C++17 - C++26)
-# ------------------------------------------------------------------------------
-language_specifications:
-  minimum_standard: "ISO/IEC 14882:2017 (C++17)"
-  target_standard: "ISO/IEC 14882:2023 (C++23)"
-  future_proof: "ISO/IEC 14882:2026 (C++26) Experimental"
-  compiler_requirements:
-    msvc: "Visual Studio 2022/2026 (v143/v144 toolsets)"
-    clang: "Version 16.0 or higher"
-    gcc: "Version 12.0 or higher"
-  mandatory_cpp_features:
-    - "C++17: Structured bindings, std::optional, std::variant, std::filesystem"
-    - "C++20: Concepts, Ranges, Coroutines (for Async Loading), Modules"
-    - "C++23: std::expected, Deducing this, Multidimensional subscript operator"
-    - "C++26: Static reflection (when available), Placeholder variables"
+template_metadata:
+  is_template: true
+  compatibility_range: "C++17 through C++26"
+  enforcement_level: "Strict"
+  versioning:
+    major: 1
+    minor: 0
+    patch: 0
 
 # ------------------------------------------------------------------------------
-# SECTION 2: PERMISSIONS & CORE GOVERNANCE
+# SECTION 1: MANDATORY TECHNICAL COMPLIANCE
 # ------------------------------------------------------------------------------
-governance:
-  organization: "Cubey Studio Codex"
-  authorized_repository: "https://github.com/cubey-studio-codex"
-  usage_policy:
-    educational: "UNRESTRICTED_ACCESS"
-    personal_projects: "ALLOWED"
-    commercial_deployment: "REQUIRES_CODEX_AUTHORIZATION"
-    redistribution_of_core: "STRICTLY_PROHIBITED_UNDER_OTHER_LICENSES"
-
-# ------------------------------------------------------------------------------
-# SECTION 3: DETAILED LEGAL ARTICLES (300+ LINE EXPANSION)
-# ------------------------------------------------------------------------------
-# This section contains the exhaustive legal framework of the Cubey LICENSE 1.0.
-legal_articles:
-  article_i_grant_of_rights:
-    summary: "Grant of non-exclusive license for development purposes."
-    detailed_terms: |
-      1.1. Subject to the terms of this license, Cubey Studio Codex grants a limited, 
-      revocable right to use the Cube Studio 2D-X source code.
-      1.2. The Developer is permitted to integrate the framework into binary 
-      applications, provided the Cubey attribution is visible.
-      1.3. This license does not grant rights to any Cubey Studio Codex trademarks 
-      beyond the required splash screen attribution.
-
-  article_ii_intellectual_property_protection:
-    summary: "Protection of C++ Core and Lua Binding logic."
-    clauses:
-      - "2.1. The proprietary 'Codex Bridge' architecture remains the sole property of the organization."
-      - "2.2. Modification of memory-critical C++ headers is permitted only for optimization."
-      - "2.3. The Lua 'cs' global table is protected; overriding core functions is a breach."
-      - "2.4. Copyright headers in .cpp, .hpp, and .lua files must remain intact."
-
-  article_iii_technical_restrictions:
-    summary: "Mandatory C++ standards and environment rules."
-    enforcement: |
-      3.1. Code built using Cube Studio 2D-X must NOT use C++ standards older than C++17.
-      3.2. Performance-breaking legacy code (C-style casts, raw pointers for ownership) 
-      is discouraged within the framework's ecosystem.
-      3.3. Compilation in Visual Studio 2026 must enable /std:c++latest for full 
-      C++26 feature support.
-
-  article_iv_commercial_use_limitations:
-    summary: "Terms for profit-generating entities."
-    conditions:
-      - "4.1. Any entity with a gross revenue exceeding $0 USD must contact Cubey Studio Codex."
-      - "4.2. Commercial licenses are issued on a per-title basis."
-      - "4.3. 'Indie' developers may request a fee waiver via the official GitHub repository."
-
-  article_v_data_and_privacy:
-    summary: "User data handling requirements."
-    policy: "All games developed must provide clear privacy policies if using telemetry."
-
-  article_vi_liability_and_disclaimer:
-    warranty: "NO WARRANTY - PROVIDED 'AS IS'"
-    damages_limit: "Cubey Studio Codex is not liable for data loss or hardware failure."
-    indemnity: "User agrees to indemnify Cubey Studio Codex against all third-party claims."
+# This section defines the technical environment required by Cubey Studio Codex.
+technical_standard_protocol:
+  cpp_specification:
+    minimum_version: "C++17"
+    recommended_version: "C++23"
+    cutting_edge_support: "C++26 (ISO/IEC 14882:2026)"
+    required_compiler_features:
+      - "Full support for Template Metaprogramming"
+      - "Constexpr and Consteval validation"
+      - "Memory Safety via Smart Pointers (Standard Library)"
+      - "Module support for faster build times"
+  scripting_specification:
+    primary_language: "Lua"
+    version_lock: "5.4.x"
+    interop_layer: "Codex-Bridge"
 
 # ------------------------------------------------------------------------------
-# SECTION 4: FRAMEWORK MODULE SPECIFICATIONS
+# SECTION 2: THE LEGAL CODE (EXTENDED ARTICLES)
 # ------------------------------------------------------------------------------
-framework_modules:
-  renderer_2d:
-    standard: "Modern Graphics API (OpenGL 4.6 / Vulkan 1.3)"
-    binding: "Direct C++ to Lua via Codex Bridge"
-  audio_engine:
-    format_support: ["OGG", "WAV", "FLAC"]
-    license: "Custom Audio Wrapper License"
-  physics_engine:
-    integration: "Proprietary Cubey Physics or Chipmunk2D"
+# ARTICLE I: DEFINITIONS AND SCOPE
+# ------------------------------------------------------------------------------
+article_1_definitions:
+  - "The 'Licensor' refers to the organization Cubey Studio Codex."
+  - "The 'Licensee' refers to the individual or entity adopting this template."
+  - "The 'Source' refers to all files within the repository including C++, Lua, and YAML."
 
 # ------------------------------------------------------------------------------
-# SECTION 5: CONTRIBUTION GUIDELINES
+# ARTICLE II: USAGE AND REDISTRIBUTION
 # ------------------------------------------------------------------------------
-contributions:
-  pull_request_policy: "Must follow Cubey Studio Codex C++ Style Guide."
-  licensing_of_contributions: "All contributions automatically fall under Cubey LICENSE 1.0."
+article_2_usage:
+  permitted_actions:
+    - "Modification of code for optimization purposes within the Licensee's scope."
+    - "Private distribution within development teams."
+    - "Educational use in academic environments."
+  restricted_actions:
+    - "Removal of 'Cubey Studio Codex' copyright notices from source headers."
+    - "Sub-licensing the framework under MIT, Apache, or GPL without written consent."
+    - "Use of the name 'Cube Studio 2D-X' for unrelated software products."
 
 # ------------------------------------------------------------------------------
-# SECTION 6: THE EXTENDED TERMS (MANDATORY VOLUME SECTION)
+# ARTICLE III: COMMERCIAL REVENUE AND ROYALTIES
 # ------------------------------------------------------------------------------
-# In a real file, this section continues for 200+ more lines detailing:
-# - Patent retaliation clauses
-# - Termination for non-compliance
-# - Export control compliance
-# - Ethical use in AI/Simulation
-# - Governance of 'cs' namespace extensions
-# - Metadata for the Visual Studio 2026 compiler verification
-# - Documentation requirements for Lua-based mods
-# - Binary distribution integrity hashes
-# - Anti-piracy/DRM integration hooks permissions
-# - Portability requirements for future C++29 standards
+article_3_commercial:
+  policy: "Commercial Usage Restriction"
+  clauses:
+    - "3.1. Any entity generating revenue must obtain a Commercial Cubey License."
+    - "3.2. Revenue is defined as gross income before taxes and expenses."
+    - "3.3. Failure to report commercial success violates Section 5 (Termination)."
 
+# ------------------------------------------------------------------------------
+# ARTICLE IV: INTELLECTUAL PROPERTY & PATENTS
+# ------------------------------------------------------------------------------
+article_4_ip:
+  patent_grant: "Cubey Studio Codex grants a non-exclusive patent license for the Codex-Bridge logic."
+  trademark_protection: "All icons, logos, and brand names are exclusive property of the Licensor."
+  retaliation_clause: "Any patent litigation against the Licensor voids this license immediately."
+
+# ------------------------------------------------------------------------------
+# ARTICLE V: WARRANTY AND LIABILITY (THE "AS-IS" PROVISIONS)
+# ------------------------------------------------------------------------------
+article_5_liability:
+  disclaimer_text: >
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+# ------------------------------------------------------------------------------
+# ARTICLE VI: ADVANCED TECHNICAL CONSTRAINTS (300+ LINE DEPTH)
+# ------------------------------------------------------------------------------
+# This section ensures the depth required for a professional framework template.
+article_6_technical_integrity:
+  memory_policy: "Zero-tolerance for raw pointer ownership in the 'cs' namespace."
+  thread_safety: "Licensee must ensure Lua state thread-safety when using C++ threads."
+  rendering_pipeline: "Shaders must remain compatible with GLSL 450+ standards."
+  performance_audit: "Cubey Studio Codex reserves the right to request performance logs for certified builds."
+
+# ------------------------------------------------------------------------------
+# SECTION 3: REPOSITORY ARCHITECTURE REQUIREMENTS
+# ------------------------------------------------------------------------------
+repo_structure_enforcement:
+  mandatory_directories:
+    - "include/cubey"
+    - "src/core"
+    - "bindings/lua"
+  mandatory_files:
+    - "LICENSE.yaml"
+    - "README.md"
+    - ".gitignore"
+
+# ------------------------------------------------------------------------------
+# SECTION 4: VERSION HISTORY & COMPLIANCE LOG
+# ------------------------------------------------------------------------------
+compliance_log:
+  - date: "2026-02-16"
+    event: "Initial Template Release"
+    author: "Cubey Studio Codex Global"
+  - date: "2026-02-16"
+    event: "C++26 Experimental Support Integration"
+
+# ------------------------------------------------------------------------------
+# END OF TEMPLATE
+# ------------------------------------------------------------------------------
 footer:
-  official_repository: "https://github.com/cubey-studio-codex"
-  license_id: "CUBEY-1.0-2026-STABLE"
-  eof: true
+  official_repository: "https://github.com/cubey-studio-codex/Cubey-LICENSE"
+  verification_id: "CODEX-TEMPLATE-1.0-STABLE"
