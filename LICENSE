@@ -1,0 +1,138 @@
+=========================================================================================================================================================================================================
+                                                                                          CUBEY LICENSE 1.0
+=========================================================================================================================================================================================================
+                                                                  Official Software License of the Cubey Studio Codex Organization
+                                                                                Governing Project: Cube Studio 2D-X
+                                                                                 Effective Date: February 16, 2026
+                                                                    Source: https://github.com/cubey-studio-codex/Cubey-LICENSE
+=========================================================================================================================================================================================================
+
+1. PREAMBLE AND CORE PHILOSOPHY
+This License is a binding legal agreement between Cubey Studio Codex (the 
+"Licensor") and any individual or entity (the "Licensee") that downloads, 
+installs, or utilizes the Cube Studio 2D-X framework. This software is provided 
+as "Source-Available" for educational and personal growth, maintaining a strict 
+boundary against unauthorized commercial exploitation while enforcing the 
+highest standards of modern C++ engineering.
+
+2. DEFINITIONS
+2.1. "Software" refers to the Cube Studio 2D-X engine, its source code, 
+headers, assets, and the proprietary Codex-Bridge interop system.
+2.2. "Codex-Bridge" refers to the specialized binding layer facilitating 
+communication between C++26 logic and the Lua 5.4 scripting environment.
+2.3. "Derivative Works" means any software that builds upon, modifies, or 
+links to the Software's core modules.
+2.4. "Commercial Use" refers to any activity intended for or directed toward 
+commercial advantage or monetary compensation, including but not limited to 
+sales, ad-revenue, or paid services.
+
+3. MANDATORY TECHNICAL COMPLIANCE (C++17 - C++26)
+3.1. LANGUAGE VERSIONING: The Licensee is strictly prohibited from compiling 
+the Software using C++ standards older than ISO/IEC 14882:2017 (C++17).
+3.2. CORE MODULES: The software utilizes C++20 Concepts, C++23 std::expected, 
+and C++26 static reflection. Removing or modifying these to accommodate legacy 
+compilers is a violation of this License.
+3.3. COMPILER RESTRICTION: Use is only authorized via modern compilers 
+compatible with Visual Studio 2026 (MSVC v144+) or Clang 18+.
+3.4. THREAD SAFETY: Any modification to the core's asynchronous loading 
+mechanisms must adhere to the C++23 memory model for atomic operations.
+
+4. GRANT OF USAGE RIGHTS
+4.1. NON-COMMERCIAL USE: Licensor grants a non-exclusive license to use the 
+Software for personal, non-profit, and academic research.
+4.2. MODIFICATION: Licensee may modify the source code for local, private 
+development and optimization purposes.
+4.3. REDISTRIBUTION: Redistribution of source code is permitted only if this 
+LICENSE file remains intact and unaltered in the root directory.
+
+5. COMMERCIAL RESTRICTIONS AND REVENUE GATE
+5.1. ZERO REVENUE POLICY: This license version does not permit the generation 
+of revenue (0.00 USD limit).
+5.2. MANDATORY CONVERSION: If the Licensee's project enters a commercial 
+phase, a signed Commercial EULA from Cubey Studio Codex is required.
+5.3. SUB-LICENSING: Licensee shall not sub-license, rent, or lease the 
+Software as a standalone engine or development kit.
+
+6. INTELLECTUAL PROPERTY AND BRANDING
+6.1. NAMESPACE RESERVATION: The global namespaces "cs", "cubey", and "codex" 
+are the property of the Licensor.
+6.2. BRANDING: The official "Cubey Studio Codex" logo must be displayed for 
+at least 2.0 seconds during the application's boot sequence.
+6.3. TRADEMARKS: Use of the name "Cube Studio 2D-X" in marketing requires 
+explicit attribution to the Licensor.
+
+7. CODEX-BRIDGE AND LUA INTEROP INTEGRITY
+7.1. BINDING SECURITY: Licensees shall not alter the stack-registry logic of 
+the Codex-Bridge in a way that creates memory vulnerabilities.
+7.2. LUA VERSIONING: Only Lua 5.4.x or higher is authorized for use with 
+the provided binding headers.
+7.3. NAMESPACE POLLUTION: Injecting non-engine variables into the "cs" 
+table is forbidden to ensure future C++26 compatibility.
+
+8. RENDERING PROTOCOLS AND SHADER USAGE
+8.1. BACKEND INTEGRITY: The rendering pipeline (Vulkan/OpenGL) must not be 
+stripped of its optimization flags.
+8.2. SHADER ATTRIBUTION: Proprietary GLSL/HLSL shaders included in the 
+Software are subject to the same protections as the C++ source.
+
+9. DEVELOPMENT ETHICS AND LEGAL CONDUCT
+9.1. MALICIOUS USE: The Software shall not be used to create malware, 
+ransomware, or tools for unauthorized data collection.
+9.2. COMPLIANCE: Licensee must comply with all international laws regarding 
+data privacy (GDPR) and digital security.
+
+10. WARRANTY AND LIABILITY
+10.1. AS-IS: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY WARRANTY.
+10.2. LIMITATION: LICENSOR SHALL NOT BE LIABLE FOR ANY DATA LOSS, HARDWARE 
+DAMAGE, OR FINANCIAL LOSS RESULTING FROM THE USE OF THE SOFTWARE.
+
+11. TERMINATION
+11.1. BREACH: Failure to comply with Technical (Sec 3) or Commercial (Sec 5) 
+clauses results in immediate termination.
+11.2. EFFECT: Upon termination, Licensee must delete all copies of the 
+Software and derivative binaries.
+
+12. JURISDICTION AND DISPUTE RESOLUTION
+12.1. GOVERNING LAW: This License is governed by the laws of the 
+jurisdiction where Cubey Studio Codex operates.
+12.2. DISPUTES: Any legal challenge must be filed in the courts designated 
+by the Licensor.
+
+13. CONTRIBUTIONS AND PULL REQUESTS
+13.1. OWNERSHIP: Contributions submitted to the official repository 
+become the property of Cubey Studio Codex.
+13.2. LICENSING: All contributions are automatically governed by CL-1.0.
+
+14. MISCELLANEOUS
+14.1. SEVERABILITY: If any part of this license is found invalid, the 
+remainder remains in full effect.
+14.2. UPDATES: Licensor reserves the right to modify these terms via 
+GitHub commit at any time.
+
+--------------------------------------------------------------------------------
+15. DETAILED TECHNICAL SPECIFICATIONS (APPENDIX)
+--------------------------------------------------------------------------------
+15.1. Memory Management: Mandatory use of RAII and C++ smart pointers.
+15.2. Logic Flow: cs.Update() must execute before cs.Draw() in all cycles.
+15.3. Error Handling: Use of C++23 std::expected for all bridge calls.
+15.4. Compilation: All projects must define _CUBEY_CORE_ during build.
+15.5. Versioning: Minor engine updates do not require a license renewal.
+15.6. Portability: Code must remain portable between Windows and Linux.
+15.7. Optimization: Use of C++20 concepts is required for template safety.
+15.8. Reflection: C++26 reflection hooks must be preserved for Lua bindings.
+15.9. Audio: Use of the proprietary Codex-Audio wrapper is mandatory.
+15.10. Physics: Integration with Codex-Physics must use the provided headers.
+15.11. Networking: SSL/TLS is required for any networking component.
+15.12. Input: Key-binding overrides must happen via the Director class.
+15.13. Assets: .cubey file formats are proprietary and protected.
+15.14. Documentation: All code must be documented using Doxygen format.
+15.15. Testing: Mandatory unit testing for all PR submissions.
+15.16. Deployment: Static linking is preferred for core modules.
+15.17. Security: Buffer overflow checks must be enabled in release builds.
+15.18. Performance: Frames-per-second must be capped via Director logic.
+15.19. Legacy: No inclusion of C-style headers <stdio.h> allowed.
+15.20. Modernity: Use of <iostream> is restricted to debug builds.
+
+--------------------------------------------------------------------------------
+END OF CUBEY LICENSE 1.0 - OFFICIAL FULL TEXT
+--------------------------------------------------------------------------------
